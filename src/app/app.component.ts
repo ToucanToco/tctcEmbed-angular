@@ -12,7 +12,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    const fragment = document.createRange().createContextualFragment(`<script async data-tc-embed-info='{"apiBaseroute":"https://api-demo-staging.toucantoco.com","credentials":{"username":"public@toucantoco","password":"wc4SSzp5T67akeyR"},"embedToken":"b0a2642c-9608-40b4-94f2-d77f76987b70","embedType":"story","locale":"fr","id":"demo-story-4001","instanceUrl":"https://demo-staging.toucantoco.com","smallAppId":"demo"}' src="https://demo-staging.toucantoco.com/scripts/embedLauncher.js" type="text/javascript"></script>`);
+    const fragment = document.createRange().createContextualFragment(`<script async src="https://demo-embed.toucantoco.com/scripts/embedLauncher.js?id=ba817dc8-e1e6-4ee0-8ac8-b461d52e1b20"type="text/javascript"></script>`);
     document.querySelector('.tctcEmbed').appendChild(fragment);
   }
 }
